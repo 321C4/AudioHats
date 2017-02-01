@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceci n'est pas une plaque tournante", "Assembly-CSharp.csproj", "{A3891E51-8042-263B-3681-B0CF82E9FB0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceci n'est pas une plaque tournante", "Assembly-CSharp-Editor.csproj", "{B21E534D-873D-09FD-DE5C-3CB34FE1F451}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3891E51-8042-263B-3681-B0CF82E9FB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3891E51-8042-263B-3681-B0CF82E9FB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3891E51-8042-263B-3681-B0CF82E9FB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3891E51-8042-263B-3681-B0CF82E9FB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21E534D-873D-09FD-DE5C-3CB34FE1F451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21E534D-873D-09FD-DE5C-3CB34FE1F451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21E534D-873D-09FD-DE5C-3CB34FE1F451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21E534D-873D-09FD-DE5C-3CB34FE1F451}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
