@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A3891E51-8042-263B-3681-B0CF82E9FB0B}</ProjectGuid>
+    <ProjectGuid>{7AA59612-BBFE-11D4-752F-9442B4E79612}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -129,8 +129,8 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
      <Compile Include="Assets\Scripts\AudioScrub.cs" />
      <Compile Include="Assets\Scripts\ChannelsHandler.cs" />
-     <Compile Include="Assets\Scripts\MouseDragforDebug.cs" />
      <Compile Include="Assets\Scripts\PlaySongDebug.cs" />
+     <Compile Include="Assets\Scripts\PlayheadHandler.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
