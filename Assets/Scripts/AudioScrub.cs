@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  // Required when Using UI elements.
 
 public class AudioScrub : MonoBehaviour {
-	public Slider mainSlider;
 	public GameObject songPlank;
 	public GameObject scrubberKnob;
-	public GameObject[] ColorGos;
 	private float knobPosZ;
+	private float knobPosX;
 	private AudioSource PlankAudio;
 	public List<GameObject> colorKnobs;
 	public Material lerpMat1;
@@ -21,24 +19,24 @@ public class AudioScrub : MonoBehaviour {
 
 	private void Start()
 	{   
+		knobPosX = scrubberKnob.transform.position.x;
 		knobPosZ = scrubberKnob.transform.position.z;
 		rend = songPlank.GetComponent<Renderer>();
 		PlankAudio = songPlank.GetComponent<AudioSource>(); 
-		PlankAudio.volume = 0.5f;
 		clipLength = PlankAudio.clip.length; // Length of the audioclip attached to this song plank
-		PlankAudio.loop = false;
+		PlankAudio.loop = true;
 		plankHeight = (rend.bounds.max.z)-(rend.bounds.min.z);
 		plankLength = (rend.bounds.max.x)-(rend.bounds.min.x);
 	}
 		
 
 	void Update(){
-
+		
 			scrubberKnob.transform.localPosition = new Vector3 (((PlankAudio.time * plankLength) / clipLength), 
 				scrubberKnob.transform.localPosition.y, scrubberKnob.transform.localPosition.z);
 		
-		rend.material.Lerp (lerpMat1, lerpMat2, (PlayheadHandler.knobPosX / plankLength));
-		PlankAudio.volume = (scrubberKnob.transform.localPosition.z)/plankHeight;
+			rend.material.Lerp (lerpMat1, lerpMat2, (knobPosX / plankLength));
 
+			PlankAudio.volume = (scrubberKnob.transform.localPosition.z) / plankHeight;
 	}
 }
