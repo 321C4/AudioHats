@@ -19,8 +19,8 @@ public class AudioScrub : MonoBehaviour {
 
 	private void Start()
 	{   
-		knobPosX = scrubberKnob.transform.position.x;
-		knobPosZ = scrubberKnob.transform.position.z;
+
+		knobPosZ = scrubberKnob.transform.localPosition.z;
 		rend = songPlank.GetComponent<Renderer>();
 		PlankAudio = songPlank.GetComponent<AudioSource>(); 
 		clipLength = PlankAudio.clip.length; // Length of the audioclip attached to this song plank
@@ -31,12 +31,11 @@ public class AudioScrub : MonoBehaviour {
 		
 
 	void Update(){
+		knobPosX = scrubberKnob.transform.localPosition.x;
+		scrubberKnob.transform.localPosition = new Vector3 (((PlankAudio.time * plankLength) / clipLength), 
+			scrubberKnob.transform.localPosition.y, scrubberKnob.transform.localPosition.z);
 		
-			scrubberKnob.transform.localPosition = new Vector3 (((PlankAudio.time * plankLength) / clipLength), 
-				scrubberKnob.transform.localPosition.y, scrubberKnob.transform.localPosition.z);
-		
-			rend.material.Lerp (lerpMat1, lerpMat2, (knobPosX / plankLength));
-
-			PlankAudio.volume = (scrubberKnob.transform.localPosition.z) / plankHeight;
+		rend.material.Lerp (lerpMat1, lerpMat2, (knobPosX / plankLength));
+		PlankAudio.volume = (scrubberKnob.transform.localPosition.z) / plankHeight;
 	}
 }

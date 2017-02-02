@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioScrub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AudioScrub.cs">
     <Files>
-      <File FileName="Assets/Scripts/AudioScrub.cs" Line="26" Column="40" />
-      <File FileName="Assets/Scripts/PlayheadHandler.cs" Line="12" Column="15" />
-      <File FileName="Assets/Scripts/PlaySongDebug.cs" Line="21" Column="3" />
+      <File FileName="Assets\Scripts\AudioScrub.cs" Line="39" Column="32" />
+      <File FileName="Assets\Scripts\PlayheadHandler.cs" Line="12" Column="15" />
+      <File FileName="Assets\Scripts\PlaySongDebug.cs" Line="1" Column="1" />
+      <File FileName="Assets\NewtonVR\NVRSlider.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
