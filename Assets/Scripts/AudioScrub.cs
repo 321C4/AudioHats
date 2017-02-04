@@ -5,8 +5,8 @@ using UnityEngine;
 public class AudioScrub : MonoBehaviour {
 	public GameObject songPlank;
 	public GameObject scrubberKnob;
-	private float knobPosZ;
-	private float knobPosX;
+	public static float knobPosZ;
+	public static float knobPosX;
 	private AudioSource PlankAudio;
 	public List<GameObject> colorKnobs;
 	public Material lerpMat1;
@@ -19,8 +19,6 @@ public class AudioScrub : MonoBehaviour {
 
 	private void Start()
 	{   
-
-		knobPosZ = scrubberKnob.transform.localPosition.z;
 		rend = songPlank.GetComponent<Renderer>();
 		PlankAudio = songPlank.GetComponent<AudioSource>(); 
 		clipLength = PlankAudio.clip.length; // Length of the audioclip attached to this song plank

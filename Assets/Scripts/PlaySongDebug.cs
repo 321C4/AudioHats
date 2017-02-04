@@ -10,7 +10,7 @@ public class PlaySongDebug : MonoBehaviour {
 		PlankAudio= plank.GetComponent<AudioSource>();
 	}
 	
-	void OnMouseDown(){
+	public void PlayTheMusic(){
 		if (PlankAudio.isPlaying) {
 			PlankAudio.Stop ();
 		}
