@@ -12,11 +12,6 @@ public class PlayheadHandler : MonoBehaviour {
 
 	void Start(){
 		
-		transform.localPosition = new Vector3  
-			(transform.localPosition.x, transform.localPosition.y, 
-				(AudioScrub.plankHeight / 2));
-		transform.localPosition = pos;
-		AudioScrub.knobPosZ = pos.z;
 	}
 
 

@@ -25,8 +25,8 @@ public class AudioScrub : MonoBehaviour {
 		PlankAudio.loop = true;
 		plankHeight = (rend.bounds.max.z)-(rend.bounds.min.z);
 		plankLength = (rend.bounds.max.x)-(rend.bounds.min.x);
+
 	}
-		
 
 	void Update(){
 		knobPosX = scrubberKnob.transform.localPosition.x;
@@ -34,6 +34,5 @@ public class AudioScrub : MonoBehaviour {
 			scrubberKnob.transform.localPosition.y, scrubberKnob.transform.localPosition.z);
 		
 		rend.material.Lerp (lerpMat1, lerpMat2, (knobPosX / plankLength));
-		PlankAudio.volume = (scrubberKnob.transform.localPosition.z) / plankHeight;
 	}
 }
