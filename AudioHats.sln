@@ -1,9 +1,9 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHats", "Assembly-CSharp.csproj", "{7AA59612-BBFE-11D4-752F-9442B4E79612}"
+# Visual Studio 2008
+
+Project("{6AA709A8-0D7D-A9FC-2C20-1D25AC8E7AB1}") = "AudioHats", "Assembly-CSharp.csproj", "{7AA59612-BBFE-11D4-752F-9442B4E79612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHats", "Assembly-CSharp-Editor.csproj", "{3482189E-B314-4FBA-C075-79AAF7306475}"
+Project("{6AA709A8-0D7D-A9FC-2C20-1D25AC8E7AB1}") = "AudioHats", "Assembly-CSharp-Editor.csproj", "{3482189E-B314-4FBA-C075-79AAF7306475}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
